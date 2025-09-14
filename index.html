@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter Example</title>
+</head>
+<body>
+  <script>
+    // Array of ages
+    const ages = [12, 17, 18, 20, 25, 30, 15, 40];
+
+    // Use filter with a callback function
+    const adults = ages.filter(function(age) {
+      if (age >= 18) {
+        return true;   // keep the value
+      } else {
+        return false;  // remove the value
+      }
+    });
+
+    console.log("All Ages:", ages);
+    console.log("Adults (18+):", adults);
+  </script>
+</body>
+</html>
